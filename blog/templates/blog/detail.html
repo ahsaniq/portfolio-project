@@ -50,20 +50,26 @@
     <main role="main">
 
       <div class="container">
-        <br/>
-        <h1 style="text-align:center">BLOG</h1>
-        <hr/>
-        <br/>
-        <h2 style="text-align:center">Latest posts</h2>
-        <br/>
-        <br/>
-        <div class="">
+        <div style="display:block;overflow:auto;">
           <br/>
-          <h1>{{blog.title}}<br/><br/></h1>
-            <img class="mb-2" src="{{blog.image.url}}" alt="" width="400px"/>
-            <p class="">{{blog.body}}</p>
+          <br/>
+          <br/>
+          <h1 class="font-weight-light text-center">BLOG</h1>
+          <hr/>
+
+          <br/>
+          <div class=" text-left">
+            <br/>
+
+            <div class="col-md-4 float-left pl-0 pb-2" style="">
+              <img class="mb-2 img-fluid" src="{{blog.image.url}}" />
+            </div>
+            <h2 class=" font-weight-normal">{{blog.title}}</h2>
+            <p class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{blog.body}}</p>
           </div>
         </div>
+
+      </div>
 
       </main>
 
