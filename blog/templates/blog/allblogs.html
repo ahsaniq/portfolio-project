@@ -59,8 +59,8 @@
             <div class="row">
               {% for Blog in blogs.all %}
               <div class="col-md-4">
-                <div class="card">
-                  <img src="{{Blog.image.url}}" alt=""/>
+                <div class="card ">
+                  <img class="img-fluid" src="{{Blog.image.url}}" alt=""/>
                   <div class="card-body">
                     <a href="{% url 'detail' Blog.id %}"> <p class="card-text">{{ Blog.title }}</p></a>
                     <p>{{Blog.pub_date_pretty}}</p>
